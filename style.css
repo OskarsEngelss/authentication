@@ -1,0 +1,139 @@
+body {
+  width: 100vw;
+
+  background-color: rgb(216, 216, 252);
+  margin: 0;
+  padding-top: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  backdrop-filter: blur(4px);
+  background-color: rgba(200, 200, 200, 0.5);
+  box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.3);
+  border-bottom: 1px solid #ccc;
+}
+a {
+  margin: 0 30px 0 30px;
+  font-size: 23px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.email-box, .register-login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #BADFD7;
+  color: #C17779;
+  border: 0.4vh solid #60BFC1;
+}
+
+.register-login-box {
+  flex-direction: column;
+  width: min-content;
+  padding: 5vh 3vw 5vh;
+  border-radius: 4vh;
+}
+.register-login-label {
+  padding: 1vh 0 1vh;
+}
+
+label {
+  display: block;
+}
+
+.explanation {
+  font-size: 0.7em;
+}
+
+button {
+  width: min-content;
+
+  margin: 1vh 0 0;
+  padding: 0.6vh 1.2vw;
+  background-color: #FDB7B9;
+  color: white;
+  border: solid 0.3vh #C17779; 
+  border-radius: 1vh;
+  cursor: pointer;
+}
+
+.email-box {
+  padding: 1vw;
+}
+
+.flash {
+  animation: disappear 3s;
+  visibility: hidden;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.button-holder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 10px;
+
+  background-color: #BADFD7;
+  border: black 3px solid;
+  border-radius: 35px;
+}
+.back-circle {
+  background-color: #60BFC1;
+
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 0;
+
+  border: black 3px solid;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.back-circle:hover {
+  transform: scale(1.1);
+}
+.back-button {
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+
+  background: none;
+  color: black;
+  font-size: 1.35em;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}

@@ -1,3 +1,6 @@
 <?php
-echo "hello";
+session_start();
+
+require "functions.php";
+require "router.php";
 ?>
